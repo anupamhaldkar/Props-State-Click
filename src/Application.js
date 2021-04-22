@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 
 class Application extends Component {
     render(){
+        let name ="Anupam Haldkar"
         return (
             <div>
-            <h1>Hello, World</h1>
+            <h1>Hello {name}</h1>
             <span>Hmm</span>
             </div>
         );
