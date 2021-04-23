@@ -7,12 +7,18 @@ class Application extends Component {
             count:0
         }
     }
+    handleClick = () => {
+        this.setState({
+            count:this.state.count+1
+        })
+    }
+
     render(){
         let {count} = this.state;
         return (
             <div>
             <h1>Hello {count} times</h1>
-            <button onclick={()=>handleClick()}>Click to hello</button>
+            <button onclick={()=>this.handleClick()}>Click to hello</button>
             </div>
         );
     }
