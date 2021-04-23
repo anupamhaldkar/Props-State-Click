@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import HighScore from './HighScore';
 class Application extends Component {
     constructor(props){
         super(props);
@@ -16,7 +16,7 @@ class Application extends Component {
     }
 
     componentDidUpdate(props, state){
-        if(this.state.count > 10&& !this.state.overTen&&this.state.count!= state.count){
+        if(this.state.count > 10&& !this.state.overTen&&this.state.count!== state.count){
             console.log("Updating over Ten");
             this.setState({overTen:true});
         }
@@ -27,10 +27,7 @@ class Application extends Component {
         return (
             <div>
             <h1>Hello {count} times</h1>
-            {(this.state.overTen)?
-            <h3>Beated Score of 10</h3>
-            :null
-                 }
+            <HighScore />
             <button onClick={()=>this.handleClick()}>Click to hello</button>
             </div>
         );
