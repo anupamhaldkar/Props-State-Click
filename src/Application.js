@@ -8,11 +8,11 @@ class Application extends Component {
         }
     }
     render(){
-        let name ="Anupam Haldkar"
+        let {count} = this.state;
         return (
             <div>
-            <h1>Hello {name}</h1>
-            <span>Hmm</span>
+            <h1>Hello {count} times</h1>
+            <button onclick={()=>handleClick()}>Click to hello</button>
             </div>
         );
     }
