@@ -18,7 +18,7 @@ class Application extends Component {
         return (
             <div>
             <h1>Hello {count} times</h1>
-            <button onclick={()=>this.handleClick()}>Click to hello</button>
+            <button onClick={()=>this.handleClick()}>Click to hello</button>
             </div>
         );
     }
