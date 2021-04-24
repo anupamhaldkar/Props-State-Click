@@ -27,7 +27,9 @@ class Application extends Component {
         return (
             <div>
             <h1>Hello {count} times</h1>
-            <HighScore />
+            <HighScore 
+            overTen={this.state.overTen}
+            />
             <button onClick={()=>this.handleClick()}>Click to hello</button>
             </div>
         );
