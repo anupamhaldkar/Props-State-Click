@@ -9,7 +9,7 @@ class Application extends Component {
 
         }
     }
-    onReset = (e) => {
+    onResete = (e) => {
         this.setState({
             count:0,
             overTen:false
@@ -36,7 +36,7 @@ class Application extends Component {
             <h1>Hello {count} times</h1>
             <HighScore 
             overTen={this.state.overTen}
-            onReset = {(e)=>this.onReset(e)}
+            onReset = {this.onResete}
             />
             <button onClick={()=>this.handleClick()}>Click to hello</button>
             </div>
