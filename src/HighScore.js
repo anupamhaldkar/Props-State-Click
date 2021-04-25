@@ -3,7 +3,13 @@ class HighScore extends Component{
     render(){
         if(this.props.overTen){
         return (
-            <h3>Beat High score </h3>
+            <div>
+            <h3>Beat High score
+                <br />
+                <button onClick={(e)=>this.props.onReset(e)}>Reset</button>
+                 </h3>
+                 </div>
+
         )
         }
         else{
